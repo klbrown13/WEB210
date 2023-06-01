@@ -1,8 +1,21 @@
 
 /* Global styles
 --------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
-    color: #343434;
+    /*color: #343434; */
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 img{
@@ -16,19 +29,42 @@ a {
 a:hover{
     text-decoration: none;
 }
+h1{
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 5px 5px lightseagreen;
+}
+h2{
+    font-size: 45px;
+}
 
+h1, h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+.content-wrap{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 /* Profile
 --------------------------------------*/
 header{
-    background: #2f3061;
+    background: #0081C9;
     color: #F7FFF7;
 }
 
 /* Projects
 --------------------------------------*/
 .projects{
-    background: #F7FFF7;
+    background: #5BC0F8;
 }
 
 .projects a{
@@ -41,32 +77,73 @@ header{
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 
 .projects btn:hover{
     background: rgba(47,48,97,80%);
 }
 
+.project-item{
+    overflow: hidden;
+    margin-right: 20px;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
 
+.project-item img {
+    float: left;
+}
 
+.project-item h3 {
+    margin-top: 0;
+}
 
-
+.content-wrap-left{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+    right: 250px;
+}
 
 /* Work Experience
 --------------------------------------*/
 .work-experience{
-    background: #A1C6D7;
+    background: #86E5FF;
+}
+
+.content-wrap-right{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+    left: 450px;
 }
 
 
 /* Education
 --------------------------------------*/
-
-
+.education{
+    background: #FFF5B8;
+}
 
 /* Contact Info
 --------------------------------------*/
 footer{
-    background: #343434;
-    color: #F7FFF7;
+    background: #FFE7A0;
+    color: black;
+}
+
+footer a{
+    color: black;
+    font-size: 20px;
+}
+
+.content-wrap-right{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+    left: 450px;
 }
